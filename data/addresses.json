@@ -1,0 +1,45 @@
+{
+    "mappings": {
+        "properties": {
+            "email_address": {
+                "type": "keyword"
+            },
+            "object_id": {
+                "type": "keyword"
+            },
+            "web_address": {
+                "type": "keyword"
+            },
+            "main_phone_number": {
+                "type": "keyword"
+            },
+            "city": {
+                "type": "keyword"
+            },
+            "state_province": {
+                "type": "keyword"
+            },
+            "region": {
+                "type": "keyword"
+            },
+            "zip_postal_code": {
+                "type": "keyword"
+            },
+            "address1": {
+                "type": "keyword"
+            },
+            "address2": {
+                "type": "keyword"
+            },
+            "country": {
+                "type": "keyword"
+            },
+            "address_type": {
+                "type": "keyword"
+            },
+            "additional_phone_numbers": {
+                "type": "keyword"
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+{
+
+    "objectId": {
+        "type": "keyword"
+    },
+    "lastUpdate": {
+        "type": "date_nanos"
+    },
+    "isActive": {
+        "type": "boolean"
+    },
+    "groupName": {
+        "type": "keyword"
+    },
+    "title": {
+        "type": "keyword"
+    },
+    "avatarUrl": {
+        "type": "text"
+    },
+    "profilePicUrl": {
+        "type": "text"
+    },
+    "messagekey": {
+        "type": "text"
+    },
+    "description": {
+        "type": "text"
+    },
+    "infoPage": {
+        "type": "text"
+    },
+    "groupType": {
+        "type": "keyword"
+    },
+    "members": {
+        "type": "nested",
+        "properties": {
+            "memberType": { "type": "keyword" },
+            "memberRoll": { "type": "keyword" },
+            "objectId": { "type": "keyword" },
+            "isActive": {
+                "type": "boolean"
+            },
+            "dateAdded": {
+                "type": "date"
+            }
+        }
+    }
+}

@@ -1,0 +1,113 @@
+{
+    "objectId": {
+        "type": "keyword"
+    },
+    "lastUpdate": {
+        "type": "date_nanos"
+    },
+    "isActive": {
+        "type": "boolean"
+    },
+    "emailAddress": {
+        "type": "keyword"
+    },
+    "firstName": {
+        "type": "keyword"
+    },
+    "userName": {
+        "type": "keyword"
+    },
+    "lastName": {
+        "type": "keyword"
+    },
+    "birthDate": {
+        "type": "date"
+    },
+    "gender": {
+        "type": "keyword"
+    },
+    "middleName": {
+        "type": "text"
+    },
+    "title": {
+        "type": "text"
+    },
+    "avatarUrl": {
+        "type": "text"
+    },
+    "profilePicUrl": {
+        "type": "text"
+    },
+    "messagekey": {
+        "type": "text"
+    },
+    "resetEmailAddress": {
+        "type": "text"
+    },
+    "resetPhoneNumber": {
+        "type": "text"
+    },
+    "securityPIN": {
+        "type": "text"
+    },
+    "currentLocation": {
+        "properties": {
+            "location": { "type": "geo_point" },
+            "lastHistoryReadingTime": { "type": "date" }
+        }
+    },
+    "loginHistory": {
+        "properties": {
+            "firstLogin": { "type": "date" },
+            "lastLogin": { "type": "date" }
+        }
+    },
+    "groups": {
+        "type": "nested",
+        "properties": {
+            "groupId": { "type": "text" },
+            "groupType": { "type": "text" },
+            "memberRole": { "type": "text" },
+            "memberType": { "type": "text" },
+            "isActive": { "type": "boolean" },
+            "dateAdded": { "type": "date" }
+        }
+    },
+    "address": {
+        "properties": {
+            "webAddress": {
+                "type": "keyword"
+            },
+            "mainPhoneNumber": {
+                "type": "keyword"
+            },
+            "city": {
+                "type": "keyword"
+            },
+            "stateProvince": {
+                "type": "keyword"
+            },
+            "region": {
+                "type": "keyword"
+            },
+            "zipPostalCode": {
+                "type": "keyword"
+            },
+            "address1": {
+                "type": "keyword"
+            },
+            "address2": {
+                "type": "text"
+            },
+            "country": {
+                "type": "keyword"
+            },
+            "addressType": {
+                "type": "keyword"
+            },
+            "additionalPhoneNumbers": {
+                "type": "text"
+            }
+        }
+    }
+}

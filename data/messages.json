@@ -1,0 +1,64 @@
+{
+
+    "objectId": {
+        "type": "keyword"
+    },
+    "messageFrom": {
+        "properties": {
+            "groupId": {
+                "type": "keyword"
+            },
+            "userId": {
+                "type": "keyword"
+            }
+        }
+    },
+    "messageTo": {
+        "type": "nested",
+        "properties": {
+            "groupId": {
+                "type": "keyword"
+            },
+            "userId": {
+                "type": "keyword"
+            }
+        }
+    },
+    "lastUpdate": {
+        "type": "date_nanos"
+    },
+    "isActive": {
+        "type": "boolean"
+    },
+    "isVisible": {
+        "type": "boolean"
+    },
+    "messageText": {
+        "type": "text"
+    },
+    "replyTo": {
+        "type": "keyword"
+    },
+    "messageType": { "type": "keyword" },
+    "messageReadState": {
+        "properties": {
+            "isRead": { "type": "boolean" },
+            "readTime": { "type": "date_nanos" },
+            "readBy": { "type": "text" }
+        }
+    },
+    "messageAttachments": {
+        "type": "nested",
+        "properties": {
+            "attachmentType": { "type": "keyword" },
+            "mimeType": { "type": "keyword" },
+            "objectId": { "type": "keyword" },
+            "referenceUrl": { "type": "keyword" },
+            "fileName": { "type": "keyword" },
+            "title": { "type": "text" },
+            "description": { "type": "text" },
+            "caption": { "type": "text" },
+            "length": { "type": "long" }
+        }
+    }
+}
